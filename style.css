@@ -32,13 +32,13 @@ body {
     pointer-events: none;
 }
 
-/* אלומה ירוקה מוארת שעוקבת אחרי העכבר */
+/* אלומה כחולה מוארת שעוקבת אחרי העכבר */
 .mouse-glow {
     position: fixed;
     width: 450px;
     height: 450px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(83, 252, 24, 0.15) 0%, rgba(83, 252, 24, 0.05) 40%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 140, 255, 0.2) 0%, rgba(0, 102, 255, 0.06) 45%, transparent 70%);
     pointer-events: none;
     transform: translate(-50%, -50%);
     transition: width 0.2s, height 0.2s;
@@ -69,8 +69,8 @@ body {
     height: 110px;
     border-radius: 50%;
     padding: 3px;
-    background: linear-gradient(135deg, #53fc18, #5865f2);
-    box-shadow: 0 0 25px rgba(83, 252, 24, 0.3);
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    box-shadow: 0 0 25px rgba(0, 162, 255, 0.35);
 }
 
 .profile-img {
@@ -124,24 +124,16 @@ h1 {
     color: #666;
 }
 
-/* גריד כרטיסיות */
+/* גריד כרטיסיות רגיל */
 .links-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 14px;
 }
 
-/* אינסטגרם בטור מלא במרכז מכיוון שיש 5 קישורים */
-.link-card.full-width {
-    grid-column: span 2;
-}
-
 @media (max-width: 550px) {
     .links-grid {
         grid-template-columns: 1fr;
-    }
-    .link-card.full-width {
-        grid-column: span 1;
     }
 }
 
@@ -191,7 +183,7 @@ h1 {
 
 /* Hover Effects */
 .link-card:hover {
-    transform: translateY(-4px) scale(1.01);
+    transform: translateY(-4px) scale(1.02);
 }
 
 .link-card.kick:hover {
