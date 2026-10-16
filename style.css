@@ -17,17 +17,17 @@ body {
     overflow-x: hidden;
 }
 
-/* רקע רשת כהה */
-.bg-grid {
+/* רקע אמביינט מודרני וייחודי */
+.bg-ambient {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
+    background: 
+        radial-gradient(circle at 20% 25%, rgba(0, 110, 255, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 80% 75%, rgba(0, 195, 255, 0.07) 0%, transparent 50%),
+        #08080a;
     z-index: 0;
     pointer-events: none;
 }
